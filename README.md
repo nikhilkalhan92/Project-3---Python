@@ -11,7 +11,7 @@ Final outcome is below
 
 To use my application, it gives you 6 options: they are Calculate Average sales, maximum sales, data for a particular day, add sales data, search a specifc t-shirt and exit the program.
 
-I designed a simple flowgram below which shows my thought process on how I wanted to deisgn my application. 
+I designed a simple diagram below which shows my thought process on how I wanted to deisgn my application. 
 
 I wanted to give the user simple rules to either search for data or use the app by entering the dat themselves.
 
@@ -61,4 +61,19 @@ This project was deployed using  Heroku terminal as follows:
 5. Select the main repository and link to the Heroku app
 6. Click on deploy.
 
+## Testing
+
+Code was first tested using the PEP8 Online validator. No issues were found in the code as detailed in the screenshot below:
+
+## Technologies Used
+
+[Pep8 Online](http://pep8online.com/) was used to validate the code.
+
+[Heroku](https://www.heroku.com) was used to deploy the application.
+
+[Github](https://github.com/nikhilkalhan92) was used as the repository hosting service.
+
+[Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
+
+[Balsamic](https://balsamiq.com/) was used to do the wireframes
 

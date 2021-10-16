@@ -2,6 +2,7 @@
 import csv  # This library is used to write data into the csv file
 import pandas as pd # This is used to read the csv and show data for a particular column
 
+
 class Sales_insight:
 
 	def __init__(self,file):

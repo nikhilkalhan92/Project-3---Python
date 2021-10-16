@@ -18,9 +18,9 @@ SHEET = GSPREAD_CLIENT.open('data')
 
 
 class Sales_insight:
-	
 
-def __init__(self,file):
+
+def__init__(self,file):
 	# Initialising all variables that'll be used across different functions/methods
 	file_read = open('data.csv','r')
 	self.data = file_read.readlines()[1:] #Indexing from 1 to not read the columns as general data

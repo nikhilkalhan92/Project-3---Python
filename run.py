@@ -16,18 +16,16 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('data')
 
-
 class Sales_insight:
 
+	def __init__(self,file):
+		# Initialising all variables that'll be used across different functions/methods
+		file_read = open('data.csv','r')
+		self.data = file_read.readlines()[1:] # Indexing from 1 to not read the columns as general data
+		self.sales = {}
+		self.avg_sales = {}
+		self.df = pd.read_csv('data.csv') # Creating dataframe using pandas
 
-def__init__(self,file):
-	# Initialising all variables that'll be used across different functions/methods
-	file_read = open('data.csv','r')
-	self.data = file_read.readlines()[1:] #Indexing from 1 to not read the columns as general data
-	self.sales = {}
-	self.avg_sales = {}
-	self.df = pd.read_csv('data.csv') #Creating dataframe using pandas
-	
 	def average(self):
 		for line in self.data: 
 			temp_var = line.split(',') # Getting all data present in the iterated line
@@ -107,21 +105,21 @@ def__init__(self,file):
 class_object = Sales_insight('data.csv')
 print('Welcome to Sale management App')
 while True:
-
-print('\n\n1)Calculate average sales\n2)Get maximum sales \n3)Read data for particular day\n4)Add Data\n5)Search Tshirt\n6)Exit')
+	print('\n\n1)Calculate average sales\n2)Get maximum sales \n3)Read data for particular day\n4)Add Data\n5)Search Tshirt\n6)Exit')
 	inp = int(input('Your input : '))
-		if inp == 1:
-			class_object.average()
-		elif inp == 2:
-			class_object.max_sales()
-				elif inp == 3:
-	    	class_object.read_data()
+	if inp == 1:
+		class_object.average()
+	elif inp == 2:
+		class_object.max_sales()
+	elif inp == 3:
+		class_object.read_data()
 	elif inp == 4:
-			class_object.add_data()
-		elif inp == 5:
-			class_object.tshirt_search()
-		elif inp == 6:
+		class_object.add_data()
+	elif inp == 5:
+		class_object.tshirt_search()
+	elif inp == 6:
 		break
 	else:
 		print('Error! Invalid input')
+
 

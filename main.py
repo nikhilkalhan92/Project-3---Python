@@ -2,6 +2,15 @@
 import csv  # This library is used to write data into the csv file
 import pandas as pd # This is used to read the csv and show data for a particular column
 
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
 
 class Sales_insight:
 

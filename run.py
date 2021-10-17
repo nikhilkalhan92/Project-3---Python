@@ -1,6 +1,5 @@
 # importing libraries
-import csv  # This library is used to write data into the csv file
-import pandas as pd  # used to read the csv&show data for a particular column
+from beautifultable import BeautifulTable 
 
 
 class Sales_insight:
@@ -13,7 +12,6 @@ class Sales_insight:
         self.data = file_read.readlines()[1:]
         self.sales = {}
         self.avg_sales = {}
-        self.df = pd.read_csv('data.csv')
 
     def average(self):
         for line in self.data:
@@ -94,27 +92,22 @@ class Sales_insight:
         for y in data_point:
             print(f'{y} : {data_point[y]}')
 
-    def add_data(self):
-        print('Please input Sales data for following ')
-        date = str(input('Enter Date : '))
-        kt = str(input('Kenny Omega T Shirt : '))
-        yb = str(input('Young bucks Tshirt : '))
-        ct = str(input('Cody T shirt : '))
-        ht = str(input('Hangman T shirt : '))
-        ac = str(input('Adam Cole T shirt : '))
-        cj = str(input('Chris Jericho T shirt : '))
-        file_open = open('data.csv', 'a', newline='')  # Open file append mode
-        writer = csv.writer(file_open)   # Initialising the writer
-        writer.writerow([date, kt, yb, ct, ht, ac, cj])  # Writing the row
-        file_open.close()
-        print('Data added succesfully!')
-
-    def tshirt_search(self):
-        tshirt = str(input('Tshirt name : '))
-        try:
-            print(self.df[tshirt])
-        except:
-            print('Please check if you have entered correct column name')
+    def show_data(self):
+        table = BeautifulTable()
+        for line in self.data:
+            temp_var = line.split(',')
+            temp_var[6].replace('\n', '')
+            table.rows.append(temp_var)
+        table.columns.header = [
+            'Date',
+            'Kenny Omega',
+            'Young bucks',
+            'Cody',
+            'Hangman',
+            'Adam Cole',
+            'Chris Jericho',
+        ]
+        print(table)
 
 
 class_object = Sales_insight()
@@ -124,30 +117,24 @@ options_message = """
 1) Calculate average sales
 2) Get maximum sales
 3) Read data for particular day
-4) Add Data
-5) Search Tshirt
-6) Exit
+4) Show all data
+5) Exit
 """
 while True:
     print(options_message)
     inp = input('Your input : ')
-    if inp not in ['1', '2', '3' , '4', '5', '6']:
-        print('invalid input')
+    if inp not in ['1', '2', '3', '4', '5',]:
+        print('Error! Invalid input')
         continue
     inp = int(inp)
     print(inp)
     if inp == 1:
-        print('I am here')
         class_object.average()
     elif inp == 2:
         class_object.max_sales()
     elif inp == 3:
         class_object.read_data()
     elif inp == 4:
-        class_object.add_data()
+        class_object.show_data()
     elif inp == 5:
-        class_object.tshirt_search()
-    elif inp == 6:
         break
-    else:
-        print('Error! Invalid input')

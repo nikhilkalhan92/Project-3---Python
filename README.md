@@ -2,62 +2,99 @@
 
 My Application was completed in Github, which runs runs in Heroku.
 
-Users can look into sales data - such as most sold on any day, the average , what days were the shirts most sold on and entering new sales data for specific t-shirts
+Please access the [live application](https://project-wrestling.herokuapp.com/) via this link.
 
-Final outcome is below
+The application will tell you
 
-![app](assets/images/app.png)
+1) The average Sales for all t-shirt companies sold during the week of 11-10-2021 - 18-10-2021
+2) Maxmium sales for one company and the date
+3) Read sales data for t-shirts sold on a particular day
+4) The number of tshirts sold by each company during the period 11-10-2021 - 18-10-2021
 
+Here is the final version
+
+![Nikhil sales management app](assets/images/finaldesign.png)
+
+ 
+1. ### Objectives
+
+### External user’s goal:
+
+The application user wants to glean insights from survey results.
+
+### Site owner's goal: 
+The application should provide actionable insights from an inputted dataset.
+
+### Potential features to include:
+
+Import survey results from the terminal, structured data file or similar.
+Parse and analyse the data
+Export the results to an appropriate file
 
 ## How to use
 
-To use my application, it gives you 6 options: they are Calculate Average sales, maximum sales, data for a particular day, add sales data, search a specifc t-shirt and exit the program.
+I designed a flow diagram which shows my thought process on how I wanted to design my application. 
 
-I designed a simple diagram below which shows my thought process on how I wanted to deisgn my application. 
+![flow](assets/wireframes3.png)
 
-![flow](assets/images/flowdiagram.png)
+I wanted to give the user simple rules to either search for specific data on t-shirts
 
-I wanted to give the user simple rules to either search for data or use the app by entering the dat themselves.
+My Application is a simple sales data app. Instructions to use every function are below
 
-For example if you want to know what day the maximum sales were, you would type '2' and the information would come up.
+1) Click runprogram 
+2) Decide which option to use and click it 
+3) Follow instructions
+4) To Calculate average sales
+5) Click Calculate average sales option
+6) Press 1
+7) Average Sales of all companies over dates between 11-10-2021 - 18-10-2021 shows up
+8) Click run program to return to menu
+9) To Get maximum sales
+10) Enter 2
+11) It will show - maximum total sales for all companies by day took place
+12) Click run program to return to menu 
+13) To Read data for particular day
+14) Enter 3
+15) Enter Date in correct order DD-MM-YYYY
+16) Data for particular day shows
+17) Click run program to return to menu
+18) Enter 4
+19) All data for all shirts sold displays
+20) To quit press run program to return to main menu
 
-The main part is putting new sales data: Now you type '4', the date of when the sales were made. You then put the numbers in for the t-shirts sold on the specific day and it will update.
-
-
-
-## Features
+2. ## Features
 
 ### Initial Deployment Features
 
 #### Main Menu
 
-The Main Menu prints a simple welcome message and then prompts a User to select one of the six options, calculate average sales, maximum sales, read data for particular day , add data , search tshirt and exit
+The Main Menu prints a simple welcome message and then prompts a User to select one of the five options: calculate average sales, maximum sales, read data for particular day, all data and exit.
 
-If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value.
+![menu](assets/images/menu.png)
 
-Upon selecting an option, lets just say 4) Add Data, user is asked to enter a date, once listed an correct data, the user is then asked to put in the sold data for 'Kenny Omega' , please enter a figure, and follow the same process for the other 5 tshirts solds. Once inputed the sales data will update and the figures are in the correct format.
+If a user tries to select a number not on the menu, or tries to enter a word for option 3, the user is prompted to enter a correct value.
 
-![addingdata](assets/images/addingdata.png)
+![invalid](assets/images/invalid1.png)
 
 The other options are below and show how it can be done.
 
-CALCULATE AVERAGE SALES
+### Calculate Average Sales
 
 ![averagesales](assets/images/averagesales.png)
 
-GET MAXIMUM SALES
+## Get maximum sales
 
 ![maxsales](assets/images/maxsales.png)
 
-READ DATA FOR PARTCULAR DAY
-![dataparticlarday](assets/images/dataparticularday.png)
+## Read data for partcular day
 
+![dataparticlarday](assets/images/readdataparticularday.png)
 
-SEARCH T SHIRT
-![searchtshirt](assets/images/tshirtsales.png)
+## Show all data
+![dataparticularday1](assets/images/showdata1.png)
+![dataparticularday2](assets/images/particulardata2.png)
 
-
-## Deployment
+3. ### Deployment
 
 This project was deployed using  Heroku terminal as follows:
 
@@ -73,11 +110,22 @@ This project was deployed using  Heroku terminal as follows:
 
 6. Click on deploy.
 
-## Testing
+Please access the [live application](https://project-wrestling.herokuapp.com/) via this link.
 
-Code was first tested using the PEP8 Online validator. No issues were found in the code as detailed in the screenshot below:
+4. ### Testing
 
-## Technologies Used
+Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
+
+![errors](assets/images/errors.png)
+![errors2](assets/images/errors2.png)
+![validation](assets/images/validation.png)
+
+I also tested my application for errors when you put in either a word or wrong number - the results are below.
+
+![invalid data](assets/images/invalid1.png) 
+![invalidwords](assets/images/invalid2.png)
+
+5. #### Technologies Used
 
 [Pep8 Online](http://pep8online.com/) was used to validate the code.
 
@@ -89,13 +137,15 @@ Code was first tested using the PEP8 Online validator. No issues were found in t
 
 [Balsamic](https://balsamiq.com/) was used to do the wireframes
 
-## Final Project
+6. ### Final Project
 
-![finalapp](assets/images/finalproduct.png)
+![menu](assets/images/menu.png)
+![maxsales](assets/images/maxsales.png)
+![particulardate](assets/images/readdataparticularday.png)
+![showdata](assets/images/showdata.png)
+![showdata2](assets/images/showdata1.png)
 
-Credits
+7. ### Credits
 
 Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance along the way
-
-
 

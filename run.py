@@ -2,26 +2,14 @@
 import csv  # This library is used to write data into the csv file
 import pandas as pd  # used to read the csv&show data for a particular column
 
-import gspread
-from google.oauth2.service_account import Credentials
-
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
-
-CREDS = Credentials.from_service_account_file('creds.json')
-SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
-SHEET = GSPREAD_CLIENT.open('data')
 
 class Sales_insight:
-    def __init__(self, file):
+
+    def __init__(self):
         """
         Reads data from csv on given days
         """
-        file_read = open('data.csv' , 'r')
+        file_read = open('data.csv', 'r')
         self.data = file_read.readlines()[1:]
         self.sales = {}
         self.avg_sales = {}
@@ -43,10 +31,10 @@ class Sales_insight:
                 self.avg_sales[temp_var[0]] = val_sum/len(temp_var[1:])
                 # Adding data & dates into the dictionary
 
-        print('Sales Average across different days :\n')
+        print('average daily sales using all companies :\n')
         # Iterating the dictionary to print avr sales for dates
         for i in self.avg_sales:
-            print(f"{i} : {self.avg_sales[i]}")
+            print(f"{i} : {self.avg_sales[i]:.2f}")
 
     def max_sales(self):
         for line in self.data:
@@ -94,7 +82,7 @@ class Sales_insight:
         cj = str(input('Chris Jericho T shirt : '))
         file_open = open('data.csv', 'a', newline='')  # Open file append mode
         writer = csv.writer(file_open)   # Initialising the writer
-        writer.writerow([date, kt, yb , ct, ht, ac, cj])  # Writing the row
+        writer.writerow([date, kt, yb, ct, ht, ac, cj])  # Writing the row
         file_open.close()
         print('Data added succesfully!')
 
@@ -106,12 +94,27 @@ class Sales_insight:
             print('Please check if you have entered correct column name')
 
 
-class_object = Sales_insight('data.csv')
+class_object = Sales_insight()
 print('Welcome to Sale management App')
+options_message = """
+
+1) Calculate average sales
+2) Get maximum sales
+3) Read data for particular day
+4) Add Data
+5) Search Tshirt
+6) Exit
+"""
 while True:
-    print('\n\n1)Calculate average sales\n2)Get maximum sales \n3)Read data for particular day\n4)Add Data\n5)Search Tshirt\n6)Exit')
-    inp = int(input('Your input : '))
+    print(options_message)
+    inp = input('Your input : ')
+    if inp not in ['1', '2', '3' , '4', '5', '6']:
+        print('invalid input')
+        continue
+    inp = int(inp)
+    print(inp)
     if inp == 1:
+        print('I am here')
         class_object.average()
     elif inp == 2:
         class_object.max_sales()

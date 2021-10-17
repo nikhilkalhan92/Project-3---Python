@@ -93,3 +93,9 @@ Code was first tested using the PEP8 Online validator. No issues were found in t
 
 ![finalapp](assets/images/finalproduct.png)
 
+Credits
+
+Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance along the way
+
+
+

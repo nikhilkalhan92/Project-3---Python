@@ -1,5 +1,5 @@
 # importing libraries
-from beautifultable import BeautifulTable 
+from beautifultable import BeautifulTable
 
 
 class Sales_insight:
@@ -123,7 +123,7 @@ options_message = """
 while True:
     print(options_message)
     inp = input('Your input : ')
-    if inp not in ['1', '2', '3', '4', '5',]:
+    if inp not in ['1', '2', '3', '4', '5']:
         print('Error! Invalid input')
         continue
     inp = int(inp)

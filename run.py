@@ -63,7 +63,23 @@ class Sales_insight:
         print(message)
 
     def read_data(self):
-        date = str(input('Enter Date : '))
+        while True:
+            date = str(input('Enter Date : '))
+            if date not in [
+                '11-10-2021',
+                '12-10-2021',
+                '13-10-2021',
+                '14-10-2021',
+                '15-10-2021',
+                '16-10-2021',
+                '17-10-2021',
+                '18-10-2021',
+            ]:
+                # tell user this is invalid input
+                print(f'{date} is invalid input\n')
+            else:
+                break
+
         data_point = {}
         for line in self.data:
             temp_var = line.split(',')

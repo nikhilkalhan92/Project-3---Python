@@ -16,7 +16,7 @@ Here is the final version
 ![Nikhil sales management app](assets/images/finaldesign.png)
 
  
-1. ### Objectives
+1. ## Objectives
 
 ### External user’s goal:
 
@@ -66,7 +66,7 @@ My Application is a simple sales data app. Instructions to use every function ar
 
 ### Initial Deployment Features
 
-#### Main Menu
+## Main Menu
 
 The Main Menu prints a simple welcome message and then prompts a User to select one of the five options: calculate average sales, maximum sales, read data for particular day, all data and exit.
 
@@ -78,7 +78,7 @@ If a user tries to select a number not on the menu, or tries to enter a word for
 
 The other options are below and show how it can be done.
 
-### Calculate Average Sales
+## Calculate average sales
 
 ![averagesales](assets/images/averagesales.png)
 
@@ -86,7 +86,7 @@ The other options are below and show how it can be done.
 
 ![maxsales](assets/images/maxsales.png)
 
-## Read data for partcular day
+## Read data for particular day
 
 ![dataparticlarday](assets/images/readdataparticularday.png)
 
@@ -94,7 +94,7 @@ The other options are below and show how it can be done.
 ![dataparticularday1](assets/images/showdata1.png)
 ![dataparticularday2](assets/images/particulardata2.png)
 
-3. ### Deployment
+3. ## Deployment
 
 This project was deployed using  Heroku terminal as follows:
 
@@ -112,7 +112,7 @@ This project was deployed using  Heroku terminal as follows:
 
 Please access the [live application](https://project-wrestling.herokuapp.com/) via this link.
 
-4. ### Testing
+4. ## Testing
 
 Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
 
@@ -125,7 +125,7 @@ I also tested my application for errors when you put in either a word or wrong n
 ![invalid data](assets/images/invalid1.png) 
 ![invalidwords](assets/images/invalid2.png)
 
-5. #### Technologies Used
+5. ## Technologies Used
 
 [Pep8 Online](http://pep8online.com/) was used to validate the code.
 
@@ -137,7 +137,7 @@ I also tested my application for errors when you put in either a word or wrong n
 
 [Balsamic](https://balsamiq.com/) was used to do the wireframes
 
-6. ### Final Project
+6. ## Final Project
 
 ![menu](assets/images/menu.png)
 ![maxsales](assets/images/maxsales.png)
@@ -145,7 +145,7 @@ I also tested my application for errors when you put in either a word or wrong n
 ![showdata](assets/images/showdata.png)
 ![showdata2](assets/images/showdata1.png)
 
-7. ### Credits
+7. ## Credits
 
-Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance along the way
+Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
 

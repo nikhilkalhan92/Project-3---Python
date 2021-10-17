@@ -33,8 +33,6 @@ The main part is putting new sales data: Now you type '4', the date of when the 
 
 The Main Menu prints a simple welcome message and then prompts a User to select one of the six options, calculate average sales, maximum sales, read data for particular day , add data , search tshirt and exit
 
-PIC OF MENU NEEDED 
-
 If a user tries to select a number not on the menu, or tries to enter a word, the user is prompted to enter a correct value.
 
 Upon selecting an option, lets just say 4) Add Data, user is asked to enter a date, once listed an correct data, the user is then asked to put in the sold data for 'Kenny Omega' , please enter a figure, and follow the same process for the other 5 tshirts solds. Once inputed the sales data will update and the figures are in the correct format.
@@ -49,14 +47,14 @@ CALCULATE AVERAGE SALES
 
 GET MAXIMUM SALES
 
+![maxsales](assets/images/maxsales.png)
+
 READ DATA FOR PARTCULAR DAY
 ![dataparticlarday](assets/images/dataparticularday.png)
 
 
 SEARCH T SHIRT
-
-
-
+![searchtshirt](assets/images/tshirtsales.png)
 
 
 ## Deployment

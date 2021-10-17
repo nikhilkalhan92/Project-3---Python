@@ -53,7 +53,14 @@ class Sales_insight:
             if self.sales[j] > max_val:
                 max_val = self.sales[j]
                 date = j
-        print(f'Maximum sales took place on {date} worth {max_val}')
+        message = '{}{}{}{}{}'.format(
+            'Maximum total sales for all companies',
+            ' by day took place on ',
+            date,
+            ' worth ',
+            f'{max_val:.2f}'
+        )
+        print(message)
 
     def read_data(self):
         date = str(input('Enter Date : '))

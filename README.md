@@ -35,7 +35,7 @@ Export the results to an appropriate file
 
 I designed a flow diagram which shows my thought process on how I wanted to design my application. 
 
-![framework](assets/images/frameworks.jpeg)
+![flow](assets/images/frameworks.png)
 
 My Application is a simple sales data app. Instructions to use every function are below
 
@@ -71,7 +71,11 @@ My Application is a simple sales data app. Instructions to use every function ar
 ![option41](assets/images/option41.png)
 ![option42](assets/images/option42.png)
 20) To quit press run program to return to main menu
+<<<<<<< HEAD
 ![step1](assets/images/step1.png)
+=======
+![step4](assets/images/step1.png)
+>>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
 
 2. ## Features
 
@@ -122,11 +126,19 @@ This project was deployed using  Heroku terminal as follows:
 6. Click on deploy.
 
 Please access the [live application](https://project-wrestling.herokuapp.com/) via this link.
+<<<<<<< HEAD
 
 4. ## Testing
 
 Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
 
+=======
+
+4. ## Testing
+
+Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
+
+>>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
 ![errors](assets/images/errors.png)
 ![errors2](assets/images/errors2.png)
 ![validation](assets/images/validation.png)
@@ -155,10 +167,16 @@ I also tested my application for errors when you put in either a word or wrong n
 ![particulardate](assets/images/readdataparticularday.png)
 ![showdata](assets/images/showdata.png)
 ![showdata2](assets/images/showdata1.png)
+<<<<<<< HEAD
 
 7. ## Credits
 
 Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
+=======
 
+7. ## Credits
+>>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
+
+Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
 
 

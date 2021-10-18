@@ -33,11 +33,11 @@ Export the results to an appropriate file
 
 ## How to use
 
-I designed a flow diagram which shows my thought process on how I wanted to design my application. 
+I designed a flow diagram, which shows my thought process, on how I wanted to design my application. 
 
 ![frameworks](assets/images/frameworks.png)
 
-My Application is a simple sales data app. Instructions to use every function are below
+My Application is a simple sales data app. Instructions to use every function are below.
 
 1) Click runprogram 
 ![step1](assets/images/step1.png)

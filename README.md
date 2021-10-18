@@ -35,7 +35,7 @@ Export the results to an appropriate file
 
 I designed a flow diagram which shows my thought process on how I wanted to design my application. 
 
-![flow](assets/images/frameworks.png)
+![frameworks](assets/images/frameworks.png)
 
 My Application is a simple sales data app. Instructions to use every function are below
 

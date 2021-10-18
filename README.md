@@ -35,32 +35,43 @@ Export the results to an appropriate file
 
 I designed a flow diagram which shows my thought process on how I wanted to design my application. 
 
-![flow](assets/wireframes3.png)
-
-I wanted to give the user simple rules to either search for specific data on t-shirts
+![flow](assets/images/frameworks.png)
 
 My Application is a simple sales data app. Instructions to use every function are below
 
 1) Click runprogram 
+    ![step1](assets/images/step1.png)
 2) Decide which option to use and click it 
 3) Follow instructions
 4) To Calculate average sales
 5) Click Calculate average sales option
 6) Press 1
+    ![avgsales](assets/images/averagesales1.png)
 7) Average Sales of all companies over dates between 11-10-2021 - 18-10-2021 shows up
+    ![averagesales](assets/images/salesaverage.png)
 8) Click run program to return to menu
+    ![returntomenu](assets/images/step1.png)
 9) To Get maximum sales
 10) Enter 2
 11) It will show - maximum total sales for all companies by day took place
+    ![maxsales](assets/images/maxsales.png)
 12) Click run program to return to menu 
+    ![step2](assets/images/step1.png)
 13) To Read data for particular day
 14) Enter 3
 15) Enter Date in correct order DD-MM-YYYY
+    ![dateformat](assets/images/dateformat.png)
 16) Data for particular day shows
+    ![dateformat2](assets/images/dateformat2.png)
 17) Click run program to return to menu
+    ![step3](assets/images/step1.png)
 18) Enter 4
+    ![option4](assets/images/option4.png)
 19) All data for all shirts sold displays
+    ![option41](assets/images/option41.png)
+    ![option42](assets/images/option42.png)
 20) To quit press run program to return to main menu
+    ![step4](assets/images/step1.png)
 
 2. ## Features
 
@@ -135,7 +146,7 @@ I also tested my application for errors when you put in either a word or wrong n
 
 [Gitpod](https://www.gitpod.io/) was used as the Code Editor for the site.
 
-[Balsamic](https://balsamiq.com/) was used to do the wireframes
+[Lucid](https://www.lucidchart.com/pages/) - used to do my flowchat
 
 6. ## Final Project
 
@@ -148,4 +159,5 @@ I also tested my application for errors when you put in either a word or wrong n
 7. ## Credits
 
 Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
+
 

@@ -71,11 +71,7 @@ My Application is a simple sales data app. Instructions to use every function ar
 ![option41](assets/images/option41.png)
 ![option42](assets/images/option42.png)
 20) To quit press run program to return to main menu
-<<<<<<< HEAD
-![step1](assets/images/step1.png)
-=======
 ![step4](assets/images/step1.png)
->>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
 
 2. ## Features
 

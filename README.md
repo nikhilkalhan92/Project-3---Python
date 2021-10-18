@@ -122,19 +122,10 @@ This project was deployed using  Heroku terminal as follows:
 6. Click on deploy.
 
 Please access the [live application](https://project-wrestling.herokuapp.com/) via this link.
-<<<<<<< HEAD
-
 4. ## Testing
 
 Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
 
-=======
-
-4. ## Testing
-
-Code was first tested using the PEP8 Online validator. I had issues which were amended and I currently have no issues found in the code as detailed in the screenshot below:
-
->>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
 ![errors](assets/images/errors.png)
 ![errors2](assets/images/errors2.png)
 ![validation](assets/images/validation.png)
@@ -163,16 +154,8 @@ I also tested my application for errors when you put in either a word or wrong n
 ![particulardate](assets/images/readdataparticularday.png)
 ![showdata](assets/images/showdata.png)
 ![showdata2](assets/images/showdata1.png)
-<<<<<<< HEAD
 
 7. ## Credits
-
-Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
-=======
-
-7. ## Credits
->>>>>>> dea9bcf2a4f82e190f58fe797bd3913360132ce1
-
 Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
 
 

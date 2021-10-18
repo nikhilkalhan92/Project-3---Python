@@ -62,7 +62,7 @@ My Application is a simple sales data app. Instructions to use every function ar
 15) Enter Date in correct order DD-MM-YYYY
 ![dateformat](assets/images/dateformat.png)
 16) Data for particular day shows
-    ![dateformat2](assets/images/dateformat2.png)
+![dateformat2](assets/images/dateformat2.png)
 17) Click run program to return to menu
 ![step3](assets/images/step1.png)
 18) Enter 4
@@ -159,8 +159,5 @@ I also tested my application for errors when you put in either a word or wrong n
 7. ## Credits
 
 Many Thanks to my mentor Marcel, and Emmanual 'Mani' Silva for help/guidance and inspiration during this journey.
-
-
-
 
 
